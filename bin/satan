@@ -1,0 +1,49 @@
+#!/usr/bin/env node
+
+var satan   = require('..'),
+    command = process.argv[2],
+    name    = process.argv[3];
+
+if (!name)
+  return usage();
+
+function usage() {
+  console.log('Usage: satan [command] user [opts]');
+  // console.log('Where command is one of: ' + Object.keys(satan).join(', '))
+  console.log('Where command is one of: exists, groups, create, delete.')
+  process.exit(1);
+}
+
+function done(err, res) {
+  if (err)
+    console.log('Error: ' + err.message);
+  else
+    console.log('Success!');
+}
+
+switch (command) {
+  case 'exists':
+    return satan.exists(name, function(bool) { 
+      console.log('Exists: ' + bool); 
+    });
+    break;
+
+  case 'groups':
+    return satan.get_groups(name, function(err, list) {
+      console.log(err || list);
+    })
+
+  case 'create':
+    var opts = { user: name, full_name: 'John ' + name };
+    return satan.create(opts, done);
+    break;
+
+  case 'remove':
+  case 'delete':
+    var opts = { delete_home: false };
+    return satan.delete(name, opts, done);
+    break;
+
+  default:
+    usage();
+}
