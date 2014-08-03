@@ -1,5 +1,5 @@
 {
-  "name": "satan",
+  "name": "roster",
   "version": "0.0.1",
   "description": "Create or delete system user accounts in OS X, Linux and Windows.",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "satan": "./bin/satan"
+    "roster": "./bin/roster"
   },
   "author": "Tomas Pollak <tomas@forkhq.com>",
   "license": "MIT",
