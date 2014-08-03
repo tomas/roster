@@ -12,7 +12,7 @@ API
       console.log('User exists? ' + exists);
     })
 
-    roster.create({ user: 'new_guy', full_name: 'The New Guy' }, function(err) {
+    roster.create({ user: 'new_guy', name: 'The New Guy' }, function(err) {
       if (!err)
         console.log('Successfully created.')
     })
@@ -22,7 +22,7 @@ API
         console.log('Successfully delete.')
     })
 
-That's it.
+That's it. For all options, check the examples.
 
 Boring stuff
 ------------

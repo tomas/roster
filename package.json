@@ -16,5 +16,23 @@
     "rimraf": "^2.2.8",
     "sudoer": "0.0.1",
     "which": "^1.0.5"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomas/roster.git"
+  },
+  "keywords": [
+    "users",
+    "local",
+    "system",
+    "accounts",
+    "login",
+    "credentials",
+    "home"
+  ],
+  "bugs": {
+    "url": "https://github.com/tomas/roster/issues"
+  },
+  "homepage": "https://github.com/tomas/roster"
 }
