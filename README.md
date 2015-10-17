@@ -3,6 +3,10 @@ Roster
 
 Create or delete system user accounts in Mac, Linux and Windows. 
 
+Installation
+
+    npm install roster
+
 API
 ---
 
