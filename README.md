@@ -3,12 +3,11 @@ Roster
 
 Create or delete system user accounts in Mac, Linux and Windows. 
 
-Installation
+## Installation
 
     npm install roster
 
-API
----
+## API
 
     var roster = require('roster');
 
@@ -28,7 +27,6 @@ API
 
 That's it. For all options, check the examples.
 
-Boring stuff
-------------
+## Boring stuff
 
 Written by Tomás Pollak. MIT licensed.
