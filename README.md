@@ -20,9 +20,9 @@ Create or delete system user accounts in Mac, Linux and Windows.
         console.log('Successfully created.')
     })
 
-    roster.delete('bad_user', function(err) {
+    roster.delete('old_user', function(err) {
       if (!err)
-        console.log('Successfully delete.')
+        console.log('Successfully deleted.')
     })
 
 That's it. For all options, check the examples.
