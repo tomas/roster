@@ -1,7 +1,7 @@
 Roster
 =====
 
-Create or delete system user accounts in Mac, Linux and Windows. 
+Create or delete system user accounts in macOS, Linux and Windows. 
 
 ## Installation
 
