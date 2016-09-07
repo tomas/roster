@@ -32,6 +32,7 @@ switch (command) {
     return roster.get_groups(name, function(err, list) {
       console.log(err || list);
     })
+    break;
 
   case 'create':
     var opts = { user: name, full_name: 'John ' + name };
